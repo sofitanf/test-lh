@@ -8,7 +8,7 @@
                 <p class="mb-3">{{ newsEvent[0]?.short_description }}
                 </p>
                 <div class="d-flex gap-2 align-items-center">
-                    <img class="clock" src="/images/icons/Clock.svg" alt="clock">
+                    <img class="clock" src="/icons/Clock.svg" alt="clock">
                     <p v-if="newsEvent[0].created_at">{{ moment(newsEvent[0].created_at).fromNow() }}</p>
                     <div class="circle"></div>
                     <p>By</p>
@@ -25,7 +25,7 @@
                 <p class="mb-3">{{ news?.short_description }}
                 </p>
                 <div class="d-flex gap-2 align-items-center">
-                    <img class="clock" src="/images/icons/Clock.svg" alt="clock">
+                    <img class="clock" src="/icons/Clock.svg" alt="clock">
                     <p v-if="news.created_at">{{ moment(news.created_at).fromNow() }}</p>
                     <div class="circle"></div>
                     <p>By</p>

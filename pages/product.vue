@@ -2,12 +2,12 @@
     <section id="product" class="container py-4">
         <div class="d-flex justify-content-start gap-2 breadcrump align-items-center">
             <NuxtLink class="muted fw-500" to="/">Beranda</NuxtLink>
-            <img src=" /images/icons/chevron-right.svg" alt="chevron">
+            <img src=" /icons/chevron-right.svg" alt="chevron">
             <NuxtLink class="" to="/product">Produk</NuxtLink>
         </div>
         <div class="d-flex justify-content-center">
             <div class="input-group position-relative w-50 mt-3">
-                <img class="me-3" src=" /images/icons/MagnifyingGlass.svg" alt="search">
+                <img class="me-3" src=" /icons/MagnifyingGlass.svg" alt="search">
                 <input v-model="search" type="text" placeholder="Cari produk..">
             </div>
         </div>
