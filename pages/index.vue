@@ -1,7 +1,7 @@
 <template>
     <section id="home" class="container py-4">
         <div class="position-relative">
-            <img class="main" src="/public/images/article.png" alt="main">
+            <img class="main" src="/images/article.png" alt="main">
             <div v-if="newsEvent.length > 0" class="card_white item">
                 <span>{{ newsEvent[0]?.category }}</span>
                 <h4 class="mt-3">{{ newsEvent[0]?.title }}</h4>
@@ -18,7 +18,7 @@
         </div>
         <h3>Article</h3>
         <div class="row news-items" id="news-items">
-            <RouterLink v-for="(news, i) in newsEvent" :key="i" class="col-sm-6 col-lg-4 item mb-4">
+            <div v-for="(news, i) in newsEvent" :key="i" class="col-sm-6 col-lg-4 item mb-4">
                 <img class="mb-3 w-100" :src="$url(news?.image)" alt="berita">
                 <span>{{ news?.category }}</span>
                 <h4 class="mt-3">{{ news?.title }}</h4>
@@ -31,7 +31,7 @@
                     <p>By</p>
                     <p class="text-red">Admin</p>
                 </div>
-            </RouterLink>
+            </div>
         </div>
     </section>
 </template>
@@ -48,7 +48,7 @@ const newsEvent = ref([])
 const getNews = async () => {
     try {
         const { data } = await useMyFetch('v2/news-event');
-        newsEvent.value = data.value.data.news_event.data
+        newsEvent.value = data.news_event.data
     } catch (error) {
         console.log(error)
     }

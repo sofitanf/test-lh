@@ -8,5 +8,5 @@ export const useMyFetch = (request, options = {}) => {
       Accept: 'application/json',
     },
   };
-  return useFetch(request, newOptions);
+  return $fetch(request, newOptions);
 };

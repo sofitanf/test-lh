@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <RouterView />
+    <NuxtPage />
     <Footer />
   </div>
 </template>
