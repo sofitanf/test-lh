@@ -48,8 +48,7 @@ const newsEvent = ref([])
 const getNews = async () => {
     try {
         const data = await useMyFetch('v2/news-event');
-        console.log(data)
-        // newsEvent.value = data.news_event.data
+        newsEvent.value = data.news_event.data
     } catch (error) {
         console.log(error)
     }
