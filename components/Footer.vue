@@ -31,11 +31,11 @@
             <div class="d-flex justify-content-md-between justify-content-end margin-top-custome align-items-end">
                 <div class="socials-media d-none d-md-flex">
                     <a target="_blank" href="#" class="d-flex align-items-center justify-content-center"><img
-                            src=" /icons/TwitterLogo.svg" alt="" /></a>
+                            :src="'/icons/TwitterLogo.svg'" alt="" /></a>
                     <a target="_blank" href="#" class="d-flex align-items-center justify-content-center"><img
-                            src=" /icons/InstagramLogo.svg" alt="" /></a>
+                            :src="'/icons/InstagramLogo.svg'" alt="" /></a>
                     <a target="_blank" href="#" rel="norefferer noopener"
-                        class="d-flex align-items-center justify-content-center"><img src=" /icons/FacebookLogo.svg"
+                        class="d-flex align-items-center justify-content-center"><img :src="'/icons/FacebookLogo.svg'"
                             alt="" /></a>
                 </div>
                 <p class="mb-0">
